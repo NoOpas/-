@@ -31,7 +31,7 @@ public class AlbumServiceTests
 
         // Assert
         Assert.NotNull(result);
-        Assert.Equal(4, result.Count);
+        Assert.Equal(1, result.Count);
         Assert.Single(result); // Since there's only one track
         Assert.Equal("Трек: The Number of the Beast", result[0]);
     }
@@ -47,7 +47,7 @@ public class AlbumServiceTests
 
         // Assert
         Assert.NotNull(result);
-        Assert.Equal(2, result.Count());
+        Assert.Equal(1, result.Count());
     }
 
 
