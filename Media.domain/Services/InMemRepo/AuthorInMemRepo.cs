@@ -64,7 +64,7 @@ namespace Media.domain.Services.InMemRepo
         public IList<string> GetAllArtisInfo()
         {
             return _authors.Select(Artist =>
-                    $"Имя: {Artist.Name}, Биография: {Artist.Description}, Жанр: {Artist.Genre} ")
+                    $"Имя: {Artist.Name}, Описание: {Artist.Description}, Жанр: {Artist.Genre} ")
                 .ToList();
         }
 
@@ -82,7 +82,7 @@ namespace Media.domain.Services.InMemRepo
             return _authors
                 .Where(Artist => Artist.Albums != null && Artist.Albums.Count == maxAlbums)
                 .Select(Artist =>
-                    $"Имя: {Artist.Name}, Биография: {Artist.Description}, Жанр: {Artist.Genre} " +
+                    $"Имя: {Artist.Name}, Описание: {Artist.Description}, Жанр: {Artist.Genre} " +
                     $"Количество альбомов: {Artist.AlbumCount}")
                 .ToList();
         }
