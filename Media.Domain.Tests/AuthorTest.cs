@@ -52,7 +52,7 @@ namespace Media.Domain.Tests
 
             foreach (var artist in expectedArtists)
             {
-                var expectedInfo = $"Имя: {artist.Name}, Биография: {artist.Description}, Жанр: {artist.Genre} " +
+                var expectedInfo = $"Имя: {artist.Name}, Описание: {artist.Description}, Жанр: {artist.Genre} " +
                     $"Количество альбомов: {artist.AlbumCount}";
                 Assert.Contains(expectedInfo, result);
             }
